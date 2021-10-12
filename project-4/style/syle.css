@@ -1,0 +1,152 @@
+@charset "utf-8";
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Base                                                 */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  outline: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+  vertical-align: baseline;
+  transition: all .2s ease-in-out;
+}
+
+body {
+  font-family: 'Nunito Sans', Lato, sans-serif;
+  background-color: #eff0f3;
+}
+
+.container {
+  width: 90%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+h1, h2, div, p, a, li {
+  -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Header                                               */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+header {
+    min-width: 100%;
+    background-color: rgb(145, 122, 187);
+    overflow: hidden;
+  }
+  
+  .flexbox {
+    display: flex;
+  }
+  
+  .title {
+    width: 40%;
+    height: 56px;
+  }
+  
+  .title h1 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 56px;
+    letter-spacing: .2px;
+    text-transform: uppercase;
+  }
+  
+  nav {
+    text-align: right;
+    width: 60%;
+    height: 56px;
+    font-size: 100%;
+  }
+
+  header input[type=text] {
+    float: center;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+    width: 400px;
+  }
+
+  nav ul {
+    float: none;
+    list-style: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    line-height: 56px;
+    cursor: default;
+  }
+  
+  nav ul li a {
+    font-size: 17px;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: .2px;
+    text-transform: none;
+    cursor: pointer;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  nav ul li + li {
+    margin-left: 25px;
+  }
+  
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Columns                                              */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+main {
+    margin-top: 60px;
+}
+
+p {
+  text-align: center;
+  line-height: 150px;
+}
+
+i {
+  text-align: center;
+  
+}
+
+.row {
+    margin-top: 120px;
+    display: flex;
+}
+
+.rown {
+  margin-top: 30px;
+  display: flex;
+}
+
+.col {
+    height: 200px;
+    background-color: #fff;
+    box-shadow: 1px 1px 2px #e4e5e8;
+}
+
+.three {
+    width: calc(33% - 12.5px);
+}
+
+.col + .col {
+    margin-left: 25px;
+}
