@@ -1,0 +1,18 @@
+.button a {
+    display: inline-block;
+    width: 120px;
+    height: 46px;
+    margin-top: 34px;
+    line-height: 47px;
+    background-color: #38395d;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .1px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 2.5 ease-in-out;
+  }
