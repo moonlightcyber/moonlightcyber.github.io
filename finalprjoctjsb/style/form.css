@@ -1,0 +1,90 @@
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Form                                                 */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.form {
+    margin-top: 60px;
+}
+  
+.form p {
+    margin-top: 20px;
+    font-size: 16px;
+}
+  
+form {
+    margin-top: 15px;
+    width: 400px;
+    font-size: 0;
+}
+  
+input {
+    width: 100%;
+    height: 50px;
+    padding: 0 15px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    text-align: left;
+}
+  
+form input + input {
+    margin-top: 15px;
+}
+  
+input:focus {
+    border: 1px solid #61cafd;
+}
+  
+input[type="reset"] {
+    width: 110px;
+    height: 46px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #1472ff;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: .2px;
+    color: #039be5;
+    cursor: pointer;
+}
+  
+input[type="reset"]:hover {
+    border: 1px solid #038ed2;
+    color: #038ed2;
+}
+  
+input[type="button"] {
+    margin-left: 15px;
+    width: 110px;
+    height: 46px;
+    text-align: center;
+    background-color: #1472ff;
+    border: 1px solid #1472ff;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: .2px;
+    color: #fff;
+    cursor: pointer;
+}
+  
+input[type="button"]:hover {
+    background-color: #038ed2;
+}
+  
+.buttons {
+    margin-top: 5px;
+    text-align: right;
+}
+  
+::placeholder, ::-moz-placeholder, :-moz-placeholder {
+    text-align: left;
+    font-size: 17px;
+    font-weight: 400;
+    color: #f5f6f7;
+    opacity: 1;
+}

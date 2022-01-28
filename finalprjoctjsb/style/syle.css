@@ -1,0 +1,155 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+  vertical-align: baseline;
+  transition: all .25s ease-in-out;
+}
+
+*, input, textarea {
+  font-family: 'Nunito Sans', 'Open Sans', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  letter-spacing: 0;
+}
+
+body {
+  background-color:#454858;
+}
+
+.container {
+  position: relative;
+  padding: 0 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row-container {
+  position: relative;
+  padding: 0 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Header                                               */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+header {
+  min-width: 100%;
+  background-color: #2a2b32;
+  overflow: hidden;
+}
+
+header div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  height: 56px;
+}
+
+.title h1 {
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 57px;
+  letter-spacing: .4px;
+  text-transform: uppercase;
+}
+
+nav {
+  text-align: right;
+  height: 57px;
+}
+
+nav ul {
+  list-style: none;
+  font-size: 0;
+}
+
+nav ul li {
+  display: inline;
+  line-height: 57px;
+  cursor: default;
+}
+
+nav ul li a {
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: .2px;
+  cursor: pointer;
+  transition: all .25s ease-in-out;
+}
+
+nav ul li a:hover {
+  text-decoration: none;
+  color: #76adff;
+}
+
+nav ul li + li {
+  margin-left: 25px;
+}
+
+.mobile-nav {
+  overflow: hidden;
+}
+
+.mobile-nav p i {
+  margin-top: 20.5px;
+  font-size: 19px;
+  color: #f4f6f8;
+  text-decoration: none;
+  transition: all .25s ease-in-out;
+  cursor: pointer;
+}
+
+.mobile-nav p i:hover {
+  color: #76adff;
+}
+
+h1, h2, h3, a, p {
+    color: #f4f6f8;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Media queries                                        */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+@media screen and (min-width: 320px) {
+  nav { display: none; }
+  .mobile-nav { display: block; }
+}
+
+@media screen and (min-width: 580px) {
+  nav { display: block; }
+  .mobile-nav { display: none; }
+}
+
+@media screen and (min-width: 768px) {
+  nav { display: block; }
+  .mobile-nav { display: none; }
+}
+
+@media screen and (min-width: 1024px) {
+  nav { display: block; }
+  .mobile-nav { display: none; }
+}
+
+::placeholder, ::-moz-placeholder, :-moz-placeholder {
+  text-align: left;
+  font-size: 17px;
+  font-weight: 400;
+  color: #d4d5d6;
+  opacity: 1;
+}

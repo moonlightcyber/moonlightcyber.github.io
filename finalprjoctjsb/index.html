@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>google'int</title>
+    <!--<link rel="shortcut icon" href="assets/img/favicon.png?v=2" type="image/x-icon"> -->
+    <link rel="stylesheet" href="../finalprjoctjsb/style/popup.css" media="all">
+    <link rel="stylesheet" href="../finalprjoctjsb/style/search.css" media="all">
+    <link rel="stylesheet" href="../finalprjoctjsb/style/syle.css" media="all">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <script src="../finalprjoctjsb/script/index.js" defer></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <div class="container flexbox">
+                <div class="title">
+                    <h1>Super Website</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="form.html" target="_blank">Sign up</a></li>
+                        <li><a href="#" id="login">Log in</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div class="container">
+                <section>
+
+                    <!--<button id="myBtn">Open Modal</button> -->
+
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+                    
+                      <!-- Modal content -->
+                      <div class="modal-content">
+                        <span class="close">&times;</span>
+                        
+                        <input type="text" id="username" placeholder="username">
+                        <input type="text" id="password" placeholder="password">
+                    
+                        <button type="submit" id="log" class="btn">Login</button>
+                      </div>
+                    
+                    </div>                    
+
+                    <div class="form"> 
+                        <form id="search" class="search" novalidate>
+                              <input type="text" id="search-engine" placeholder="enter search here">
+                              <div class="buttons">
+                                  <input type="button" id="google" value="google" disabled>
+                                  <input type="button" id="bing" value="bing" disabled>
+                              </div>
+                        </form>
+                    </div>
+
+                </section>
+            </div>
+
+        </main>
+    </div>
+</body>
+
+</html>
