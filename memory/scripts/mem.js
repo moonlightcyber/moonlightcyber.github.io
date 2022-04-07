@@ -171,10 +171,10 @@ function congratulations() {
 
     win.play();
 
-    var starRating = document.querySelector(".stars").innerHTML;
+    //var starRating = document.querySelector(".stars").innerHTML;
 
     document.getElementById("finalMove").innerHTML = moves;
-    document.getElementById("starRating").innerHTML = starRating;
+    //document.getElementById("starRating").innerHTML = starRating;
     document.getElementById("totalTime").innerHTML = finalTime;
 
     closeModal();
