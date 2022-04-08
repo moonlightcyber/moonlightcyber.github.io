@@ -214,7 +214,8 @@ const scbdm = [];
 const NO_OF_HIGH_SCORES = 5;
 const HIGH_SCORES = 'highScores';
 
-moves
+const score = `${moves} + ${finalTime}`; 
+console.log(score);
 
 function checkHighScore(score) {
   const highScores = JSON.parse(localStorage.getItem(HIGH_SCORES)) ?? [];
