@@ -177,6 +177,8 @@ function congratulations() {
     //document.getElementById("starRating").innerHTML = starRating;
     document.getElementById("totalTime").innerHTML = finalTime;
 
+    checkHighScore(account.score);
+
     closeModal();
   }
 }
@@ -206,6 +208,9 @@ for (var i = 0; i < cards.length; i++) {
 
 // scorebord
 
+const NO_OF_HIGH_SCORES = 10;
+const HIGH_SCORES = 'highScores';
+
 function checkHighScore(score) {
   const highScores = JSON.parse(localStorage.getItem(HIGH_SCORES)) ?? [];
   const lowestScore = highScores[NO_OF_HIGH_SCORES - 1]?.score ?? 0;
@@ -216,9 +221,8 @@ function checkHighScore(score) {
   }
 }
 
-function saveHighScore(score, highScores) {
-  const name = prompt('You got a highscore! Enter name:');
-  const newScore = { score, name };
+function saveHighScore(moves, highScores) {
+  const newScore = { moves, time };
   
   // 1. Add to list
   highScores.push(newScore);
@@ -233,7 +237,7 @@ function saveHighScore(score, highScores) {
   localStorage.setItem(HIGH_SCORES, JSON.stringify(highScores));
 };
 
-const highScoreList = document.getElementById(HIGH_SCORES);
+const highScoreList = document.getElementById('highScores');
 
 highScoreList.innerHTML = highScores.map((score) => 
   `<li>${score.score} - ${score.name}`
