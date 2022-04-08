@@ -208,8 +208,13 @@ for (var i = 0; i < cards.length; i++) {
 
 // scorebord
 
-const NO_OF_HIGH_SCORES = 10;
+const scbdt = [];
+const scbdm = [];
+
+const NO_OF_HIGH_SCORES = 5;
 const HIGH_SCORES = 'highScores';
+
+moves
 
 function checkHighScore(score) {
   const highScores = JSON.parse(localStorage.getItem(HIGH_SCORES)) ?? [];
@@ -240,7 +245,7 @@ function saveHighScore(moves, highScores) {
 const highScoreList = document.getElementById('highScores');
 
 highScoreList.innerHTML = highScores.map((score) => 
-  `<li>${score.score} - ${score.name}`
+  `<li>${score.moves} - ${score.time}`
 );
 
 function showHighScores() {
